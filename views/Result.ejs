@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div type="border-style:split">
+            <div>
+                <h1>Result</h1>
+            </div>
+            <div>
+                <% for(var i = 0; i < product.length; i++) {%>
+                    <p>ID: <%=product[i]._id%></p>
+                    <p>Name: <%=product[i].name%></p>
+                    <p>Price: <%=product[i].price%></p>
+                    <p>Image: <img src="images/<%=product[i].img%>" alt=""></p>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>
